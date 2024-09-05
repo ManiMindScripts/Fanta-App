@@ -5,6 +5,7 @@ import { UpdateFollower } from 'react-mouse-follower'
 import Products from './components/products/Products'
 import Banner from './components/Banner/Banner'
 import BannerText from './components/Banner/BannerText'
+import Blog from './components/Blogs/Blog'
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Products/>
       <Banner/>
       <BannerText/>
+      <Blog/>
       </UpdateFollower>
     </main>
     </>
