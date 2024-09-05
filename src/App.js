@@ -3,6 +3,8 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import { UpdateFollower } from 'react-mouse-follower'
 import Products from './components/products/Products'
+import Banner from './components/Banner/Banner'
+import BannerText from './components/Banner/BannerText'
 
 const App = () => {
   return (
@@ -16,6 +18,8 @@ const App = () => {
                } }   >
       <Hero/>
       <Products/>
+      <Banner/>
+      <BannerText/>
       </UpdateFollower>
     </main>
     </>
