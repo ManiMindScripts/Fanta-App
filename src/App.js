@@ -8,6 +8,7 @@ import BannerText from './components/Banner/BannerText'
 import Blog from './components/Blogs/Blog'
 import FAQ from './components/FAQ/FAQ'
 import Footer from './components/footer/Footer'
+import { Element } from 'react-scroll'
 
 const App = () => {
   return (
@@ -19,13 +20,20 @@ const App = () => {
                 zIndex: 10,
                 followSpeed: 1.5,
                } }   >
-      <Hero/>
-      <Products/>
+               {/* <Navbar/> */}
+               <Element name='home'>
+      <Hero/></Element>
+      <Element name='products'>
+      <Products/></Element>
+      <Element name='banner'>
       <Banner/>
-      <BannerText/>
-      <Blog/>
-      <FAQ/>
-      <Footer/>
+      <BannerText/></Element>
+      <Element name='blog'>
+      <Blog/></Element>
+      <Element name='faq'>
+      <FAQ/></Element>
+      <Element name='footer'>
+      <Footer/></Element>
       </UpdateFollower>
     </main>
     </>
